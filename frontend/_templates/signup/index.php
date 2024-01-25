@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
           <div class="bg-light p-5 rounded mt-3">
             <h1>Login Success</h1>
             <p class="lead">Now you can Go Back To Home <a
-            href=<?php $_SERVER['DOCUMENT_ROOT']."/Intern-Task/frontend/index.php"?>>here</a>
+            href="<?php echo $_SERVER['DOCUMENT_ROOT'].'/Intern-Task/frontend/index.php';?>">here</a>
             </p>
     
           </div>
@@ -82,10 +82,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
         ?>
         <main class="container">
           <div class="bg-light p-5 rounded mt-3">
-            <h1>Signup Fail</h1>
+            <h1>Signin Fail</h1>
             <p class="lead">Something went wrong, <?php echo "Error : ".$sql."<br>".$conn->error;?>
             </p>
-            <p>Please <a class="lead" href=<?php $_SERVER['DOCUMENt_root']."/Intern-Task/frontend/_templates/signup.php"?>> Try Again</a>.
+            <p>Please <a class="lead" href="<?php echo $_SERVER['DOCUMENT_ROOT'].'/Intern-Task/frontend/_templates/signin.php';?>"> Try Again</a>.
             </p>
           </div>
         </main>
